@@ -5,7 +5,9 @@ using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
+using ModelLib.model;
 
 namespace Assignment5TCPServer
 {
@@ -46,6 +48,8 @@ namespace Assignment5TCPServer
 
                 String playerString = sr.ReadLine();
                 String playerString1 = sr.ReadLine();
+
+                FootballPlayer footballPlayer = JsonSerializer.Deserialize<FootballPlayer>(playerString);
 
                 Console.WriteLine("Server have received : " + playerString);
                 Console.WriteLine(playerString1);
