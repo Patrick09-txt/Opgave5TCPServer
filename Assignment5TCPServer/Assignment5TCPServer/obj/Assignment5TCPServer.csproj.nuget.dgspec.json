@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\VSProjects\\Zealand\\Assignment5TCPServer\\Assignment5TCPServer\\Assignment5TCPServer.csproj": {}
+    "F:\\Github\\GitHub\\Opgave5TCPServer\\Assignment5TCPServer\\Assignment5TCPServer\\Assignment5TCPServer.csproj": {}
   },
   "projects": {
-    "E:\\VSProjects\\Zealand\\Assignment5TCPServer\\Assignment5TCPServer\\Assignment5TCPServer.csproj": {
+    "F:\\Github\\GitHub\\Opgave5TCPServer\\Assignment5TCPServer\\Assignment5TCPServer\\Assignment5TCPServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\VSProjects\\Zealand\\Assignment5TCPServer\\Assignment5TCPServer\\Assignment5TCPServer.csproj",
+        "projectUniqueName": "F:\\Github\\GitHub\\Opgave5TCPServer\\Assignment5TCPServer\\Assignment5TCPServer\\Assignment5TCPServer.csproj",
         "projectName": "Assignment5TCPServer",
-        "projectPath": "E:\\VSProjects\\Zealand\\Assignment5TCPServer\\Assignment5TCPServer\\Assignment5TCPServer.csproj",
+        "projectPath": "F:\\Github\\GitHub\\Opgave5TCPServer\\Assignment5TCPServer\\Assignment5TCPServer\\Assignment5TCPServer.csproj",
         "packagesPath": "C:\\Users\\pnysk\\.nuget\\packages\\",
-        "outputPath": "E:\\VSProjects\\Zealand\\Assignment5TCPServer\\Assignment5TCPServer\\obj\\",
+        "outputPath": "F:\\Github\\GitHub\\Opgave5TCPServer\\Assignment5TCPServer\\Assignment5TCPServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
