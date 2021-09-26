@@ -13,6 +13,16 @@ namespace Assignment5TCPServer
 {
     public class Server
     {
+        public static List<FootballPlayer> footballPlayers = new List<FootballPlayer>()
+        {
+            new FootballPlayer(1, "Christian Eriksen", 100, 23),
+            new FootballPlayer(2, "Kasper Dolberg", 150, 10),
+            new FootballPlayer(3, "Simon Kjær", 50, 4),
+            new FootballPlayer(4, "Mikkel Damsgaard", 125, 7),
+            new FootballPlayer(5, "Joakim Mæhle", 80, 5),
+            new FootballPlayer(6, "Kasper Schmeichel", 95, 1)
+        };
+
         private const int PORT = 2121;
         public Server()
         {
@@ -49,10 +59,17 @@ namespace Assignment5TCPServer
                 String playerString = sr.ReadLine();
                 String playerString1 = sr.ReadLine();
 
-                FootballPlayer footballPlayer = JsonSerializer.Deserialize<FootballPlayer>(playerString);
+                switch (playerString.ToLower())
+                {
+                    case "hentalle":
+                        sw.WriteLine(footballPlayers);
+                        break;
+                }
 
-                Console.WriteLine("Server have received : " + playerString);
-                Console.WriteLine(playerString1);
+                // FootballPlayer footballPlayer = JsonSerializer.Deserialize<FootballPlayer>(playerString);
+                // 
+                // Console.WriteLine("Server have received : " + playerString);
+                // Console.WriteLine(playerString1);
             }
             socket?.Close();
         }
