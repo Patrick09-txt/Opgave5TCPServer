@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Github\\GitHub\\Opgave5TCPServer\\Assignment5TCPServer\\ModelLib\\ModelLib.csproj": {}
+    "C:\\Users\\Patrick\\Documents\\GitHub\\Opgave5TCPServer\\Assignment5TCPServer\\ModelLib\\ModelLib.csproj": {}
   },
   "projects": {
-    "F:\\Github\\GitHub\\Opgave5TCPServer\\Assignment5TCPServer\\ModelLib\\ModelLib.csproj": {
+    "C:\\Users\\Patrick\\Documents\\GitHub\\Opgave5TCPServer\\Assignment5TCPServer\\ModelLib\\ModelLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Github\\GitHub\\Opgave5TCPServer\\Assignment5TCPServer\\ModelLib\\ModelLib.csproj",
+        "projectUniqueName": "C:\\Users\\Patrick\\Documents\\GitHub\\Opgave5TCPServer\\Assignment5TCPServer\\ModelLib\\ModelLib.csproj",
         "projectName": "ModelLib",
-        "projectPath": "F:\\Github\\GitHub\\Opgave5TCPServer\\Assignment5TCPServer\\ModelLib\\ModelLib.csproj",
-        "packagesPath": "C:\\Users\\pnysk\\.nuget\\packages\\",
-        "outputPath": "F:\\Github\\GitHub\\Opgave5TCPServer\\Assignment5TCPServer\\ModelLib\\obj\\",
+        "projectPath": "C:\\Users\\Patrick\\Documents\\GitHub\\Opgave5TCPServer\\Assignment5TCPServer\\ModelLib\\ModelLib.csproj",
+        "packagesPath": "C:\\Users\\Patrick\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Patrick\\Documents\\GitHub\\Opgave5TCPServer\\Assignment5TCPServer\\ModelLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\pnysk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Patrick\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

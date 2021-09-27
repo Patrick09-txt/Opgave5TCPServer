@@ -45,7 +45,7 @@ namespace Assignment5TCPServer
                             DoClient(tmpSocket);
                         }
                     );
-                }
+                }   
             }
         }
 
@@ -56,20 +56,56 @@ namespace Assignment5TCPServer
             {
                 sw.AutoFlush = true;
 
-                String playerString = sr.ReadLine();
-                String playerString1 = sr.ReadLine();
+                sw.WriteLine("Please choose an input: \n" + 
+                             "'HentAlle' \n" + 
+                             "'Hent' [Enter] '{id}' \n" +
+                             "'Gem' [Enter] '{Save Object as Json}'");
 
-                switch (playerString.ToLower())
+                String playerString1 = sr.ReadLine().ToLower();
+                if (playerString1 == null)
                 {
-                    case "hentalle":
-                        sw.WriteLine(footballPlayers);
-                        break;
+                    sw.WriteLine("Invalid input!");
+                    return;
                 }
 
-                // FootballPlayer footballPlayer = JsonSerializer.Deserialize<FootballPlayer>(playerString);
-                // 
-                // Console.WriteLine("Server have received : " + playerString);
-                // Console.WriteLine(playerString1);
+                String playerString2 = sr.ReadLine();
+                if (playerString1 != "hentalle" && playerString2 == null)
+                {
+                    sw.WriteLine("Invalid input!");
+                    return;
+                }
+
+                if (playerString1 == "hentalle")
+                {
+                    foreach (FootballPlayer footballPlayer in footballPlayers)
+                    {
+                      sw.WriteLine(JsonSerializer.Serialize(footballPlayer));  
+                    }
+                }
+
+                else if (playerString1 == "hent")
+                {
+                    int id = Convert.ToInt32(playerString2);
+                    foreach (FootballPlayer footballPlayer in footballPlayers)
+                    {
+                        if (footballPlayer.Id == id)
+                        {
+                            sw.WriteLine(JsonSerializer.Serialize(footballPlayer));
+                            return;
+                        }
+                    }
+
+                    return;
+                }
+
+                else if (playerString1 == "gem")
+                {
+                    FootballPlayer newFootballPlayer = JsonSerializer.Deserialize<FootballPlayer>(playerString2);
+                    if (newFootballPlayer != null)
+                    {
+                        footballPlayers.Add(newFootballPlayer);
+                    }
+                }
             }
             socket?.Close();
         }
